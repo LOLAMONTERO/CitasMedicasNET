@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CitasMedicas.MainPage">
+
+    <StackLayout Padding="20" >
+
+        <Label Text="Tipo de Documetno"  />
+        <Picker x:Name="TipoDocumentoPicker"  >
+            <Picker.Items>
+                <x:String>Selecciona...</x:String>
+                <x:String>T.I</x:String>
+                <x:String>C.C</x:String>
+                <x:String>P.S</x:String>
+            </Picker.Items>
+        </Picker >
+
+
+        <Label Text="Usuario" Padding="0,20,0,0" />
+        <Entry x:Name="UsuarioEntry" Placeholder="Ingrese su usuario" />
+
+
+        <Label Text="Contraseña" Padding="0,20,0,0"/>
+        <Entry x:Name="ContrasenaEntry" Placeholder="Ingrese su contraseña" IsPassword="True" Margin="0,0,0,20"/>
+
+       
+        <Button Text="Iniciar sesión" Clicked="OnIniciarSesionClicked" />
+
+     
+        <Label Text="¿Olvidaste tu contraseña?" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+    </StackLayout>
+</ContentPage>

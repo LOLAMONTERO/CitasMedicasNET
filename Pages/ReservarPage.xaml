@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CitasMedicas.ReservarPage">
+
+    <StackLayout Padding="20">
+        <!-- Fecha -->
+        <Label Text="Fecha" />
+        <DatePicker x:Name="FechaPicker" />
+
+        <!-- Especialidad -->
+        <Label Text="Especialidad" />
+        <Picker x:Name="EspecialidadPicker">
+            <Picker.Items>
+                <x:String>Seleccione..</x:String>
+                <x:String>Medicina general</x:String>
+                <x:String>Odontología</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <!-- Médico -->
+        <Label Text="Médico" />
+        <Picker x:Name="MedicoPicker" >
+            <Picker.Items>
+                <x:String>Seleccione..</x:String>
+                <x:String>Dr. Shirle Pérez</x:String>
+                <x:String>Dra. Luciana Martínez</x:String>
+                <x:String>Dr. Pepe</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <!-- Reservar -->
+        <Button Text="Reservar" Clicked="OnReservarClicked" />
+    </StackLayout>
+</ContentPage>

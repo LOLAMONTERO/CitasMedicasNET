@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CitasMedicas.ReservaPage">
+
+    <StackLayout Padding="20">
+       
+        <Label Text="Cita Reservada" FontSize="24" HorizontalOptions="Center" />
+
+        
+        <Label x:Name="FechaLabel" />
+
+       
+        <Label x:Name="EspecialidadLabel" />
+
+        
+        <Label x:Name="MedicoLabel" />
+
+        <Button Text="Aceptar" Clicked="OnAceptarClicked" />
+
+        
+        <Button Text="Cancelar" Clicked="OnCancelarClicked" />
+    </StackLayout>
+</ContentPage>
